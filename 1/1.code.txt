@@ -1,0 +1,56 @@
+class cashieringsystem:
+
+    def __init__(self, a=0, p=0, recieve=0, change=0, temp=0):
+
+        print("\n\n*****WELCOME TO SIMPLE CASHIERING SYSTEM*****\n")
+
+        self.a = a
+        self.p = p
+        self.recieve = recieve
+        self.change = change
+        self.temp = temp
+
+    def foods(self):
+        print("*****JUDE'S RESTAURANT MENU*****")
+        print(" 1. Manchuria > 130", 2. "chicken lollipop" > 100")
+        print("3.GULAB jAMUN>150", "4.Chicken Biryani>300", "5.Exit")
+        while (1):
+            c = int(input("Choose:\n"))
+            if (c == 1):
+                d = int(input("Enter the quantity:\n"))
+                self.p = self.p + 30 * d
+            elif (c == 2):
+                d = int(input("Enter the quantity:\n"))
+                self.p = self.p + 35 * d
+            elif (c == 3):
+                d = int(input("Enter the quantity:\n"))
+                self.p = self.p + 50 * d
+            elif (c == 4):
+                d = int(input("Enter the quantity:\n"))
+                self.p = self.p + 40 * d
+                if (self.p > 0):
+                    recieve = int(input(" Money Recieve:\n"))
+                    print("Change:", recieve - self.p)
+                    print("*****Thank You *****")
+                    quit()
+            elif (c == 5):
+                Exit()
+            else:
+                print("Invalid option")
+
+
+def main():
+        a = cashieringsystem()
+        while (1):
+            a.foods()
+main()
+
+
+
+
+
+
+
+
+
+
