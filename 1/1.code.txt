@@ -12,7 +12,7 @@ class cashieringsystem:
 
     def foods(self):
         print("*****JUDE'S RESTAURANT MENU*****")
-        print(" 1. Manchuria > 130", 2. "chicken lollipop" > 100")
+        print("1.Manchuria>130", "2.chicken lollipop">100")
         print("3.GULAB jAMUN>150", "4.Chicken Biryani>300", "5.Exit")
         while (1):
             c = int(input("Choose:\n"))
