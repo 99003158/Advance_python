@@ -4,45 +4,63 @@ class cashieringsystem:
     def __init__(self):
 
         print("\n\n*****WELCOME TO SIMPLE CASHIERING SYSTEM*****\n")
+
+        #self.a = a
         self.p = 0
         self.recieve = 0
         self.change = 0
         self.temp = 0
-
-    class foods:
+        #self.Gobi_Manchuria= "Gobi_Manchuria
+       
+        '''self.Gobi_Manchuria=Gobi_Manchuria
+        self.chicken_lollipop=chicken_lollipop
+        self.GULAB_AMUN=GULAB_jAMUN
+        self.chicken_biryani=chicken_biryani'''
+        class foods:
             def foods(self):
-
-                self.Gobi_Manchuria = "Gobi_Manchuria"
-                self.chicken_lollipop = "chicken_lollipop"
-                self.GULAB_AMUN = "GULAB_jAMUN"
-                self.chicken_biryani = "chicken_biryani"
-
-
+                self.Gobi_Manchuria="Gobi_Manchuria"
+                self.chicken_lollipop="chicken_lollipop"
+                self.GULAB_AMUN="GULAB_jAMUN"
+                self.chicken_biryani="chicken_biryani"
 class ex(cashieringsystem):
     def ex2(self):
-        print("1.Gobi Manchuria>130", "2.chicken lollipop-->100")
-        print("3.GULAB jAMUN...>150", "4.Chicken Biryani..>300", "5.Exit")
+       
+        #while (1):
+       
+        print("1.Gobi Manchuria>130", "\n2.chicken lollipop----->100", "\n3.GULAB jAMUN...>150","\n4.Chicken Biryani....>300", "\n5.Exit")
+            #while (1):
+       
         c = int(input("Choose:\n"))
         if (c == 1):
             d = int(input("Enter the quantity:\n"))
-            self.p = self.p + 30 * d
-            elif (c == 2):
-                d = int(input("Enter the quantity:\n"))
-                self.p = self.p + 35 * d
-                elif (c == 3):
-                    d = int(input("Enter the quantity:\n"))
-                    self.p = self.p + 50 * d
-                    elif (c == 4):
-                        d = int(input("Enter the quantity:\n"))
-                        self.p = self.p + 40 * d
-                        if (self.p > 0):
-                            recieve = int(input(" Money Recieve:\n"))
-                            print("Change:", recieve - self.p)
-                            print("*****Thank You *****")
-                            quit()
-                            elif (c == 5):
-                                Exit()
-                                else:
-                                    print("Invalid option")
+            self.p = self.p+ 30 * d
+        elif (c == 2):
+            d = int(input("Enter the quantity:\n"))
+            self.p = self.p + 35 * d
+        elif (c == 3):
+            d = int(input("Enter the quantity:\n"))
+            self.p = self.p + 50 * d
+       
+        elif (c == 4):
+            d = int(input("Enter the quantity:\n"))
+            self.p= self.p + 40 * d
+           
+       
+        if (self.p > 0):
+            recieve = int(input(" Money Recieve:\n"))
+            print("Change:",recieve - self.p)
+            print("*****Thank You *****")
+            quit()
+        elif (c == 5):
+            Exit()
+        else:
+            print("Invalid option")
+
+
+
+
+
 var = ex()
+#var.foods()
 var.ex2()
+
